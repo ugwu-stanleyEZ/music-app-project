@@ -1,0 +1,207 @@
+body {
+    background-image: url(images/background.JPG);
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    min-width: 40em;
+}
+#gridlayout {
+    display: grid;
+    grid-template-rows: 100px, 450px, 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "newrelease";
+}
+
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    height: 2.6em;  
+    display: flex;
+    position: fixed;
+    margin-left: 3em;
+    background-color: red;
+    max-width: 40em;
+}
+
+nav { 
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 3em;
+    background-color: black;
+}
+ul {
+    border: 1px solid black;
+    list-style-type: none;
+    border-radius: 1em;
+}
+li {
+    margin: .5em;    
+}
+
+.navimg1 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg1:hover, .navimg1:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}  
+.navimg2 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg2:hover, .navimg2:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg3 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg3:hover, .navimg3:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg4 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg4:hover, .navimg4:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg5 {
+    width: 20px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg5:hover, .navimg5:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg6 {
+    width: 20px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg6:hover, .navimg6:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+
+
+section {
+    display: flex;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    max-width: 30em;
+}
+
+article#topchart {
+    display: flex;
+    width: 30em;
+    height: 10em;
+    overflow: scroll;
+}
+.tc1 {
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    
+    width: 200px;
+    margin: .5em;
+    
+    border: 1px outset black;
+    
+    transition: border-color 0.5s;
+    margin-bottom: 2em;
+}
+.tc1:hover, .tc1:focus {
+    border-color: yellow;
+    transform: scale(1.12);
+}
+img#tc1 {
+   width: 10em;
+   margin-top: 2em;
+   height: 400px;
+}
+.tc2 {
+    border: 1px outset black;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    width: 275px;
+    height: 90px;
+    transition: border-color 0.5s;    
+}
+.tc2:hover, .tc2:focus {
+    border-color: yellow;
+    transform: scale(1.12);
+}
+img#tc2 {
+    width: 10em;
+    height: 65px;
+}
+.tc3 {
+    border: 1px outset black ;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+   justify-content: space-around;
+    width: 275x;
+    height: 90px;
+    transition: border-color 0.5s;
+}
+.tc3:hover, .tc3:focus {
+    border-color: yellow;
+    transform: scale(1.12);
+}
+.tc3:active {
+    background-color: yellow;
+}
+img#tc3 {
+    width: auto;
+    height: 65px;
+}
+
+#newrelease {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    
+}
+
+.rbimg {
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 2em;
+}
+
+div.newrelease {
+    
+    overflow: scroll;
+    overflow-y: hidden;
+    display: flex;
+    width: 30em;
+}

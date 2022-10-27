@@ -1,0 +1,201 @@
+body {
+    background-color: rgba(0, 0, 0, 0.76);
+    background-image: url(images/tomorrow\ tunes.JPG);
+    color: white;
+    margin-top: auto;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#gridlayout {
+    display: grid;
+    grid-template-rows:auto, 250px, 250px;
+    grid-template-columns: auto, 1fr;
+    grid-template-areas: 
+    "header header"
+    "nav section"
+    "nav newrelease";
+}
+.header {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    height: 2.6em;  
+    display: flex;
+    position: fixed;
+    margin-left: 3em;
+    background-color: black;
+    width: 70em; 
+}
+.imgheader {
+    width: 50px;
+    margin-top: 5px;
+    margin-right: 1em;
+    border-radius: 15px;
+}
+.input {
+    margin-top: 1em;
+    height: 2em;
+    width: 50em;
+    color: white;
+   background-color: black;
+   border-radius: 1em;
+}
+
+nav { 
+    grid-row: 1 / 4;
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-top: 3em;
+    background-color: black;
+}
+ul {
+    border: 1px solid black;
+    list-style-type: none;
+    border-radius: 1em;
+}
+li {
+    margin: .5em;    
+}
+.navimg1 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg1:hover, .navimg1:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}  
+.navimg2 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg2:hover, .navimg2:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg3 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg3:hover, .navimg3:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg4 {
+    width: 30px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg4:hover, .navimg4:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg5 {
+    width: 20px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg5:hover, .navimg5:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+.navimg6 {
+    width: 20px;
+    border-radius: 1em;
+    border: 4px outset black;
+    transition: border-color 0.5s;
+}
+.navimg6:hover, .navimg6:focus {
+    border-color: yellow;
+    transform: scale(1.15);
+}
+
+#section1 {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 750px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+}
+
+.tomorrowsimg {
+    border: 1px solid black;
+    border-radius: 3em;
+    
+}
+
+#article2 {
+    margin-left: 2em;
+}
+h2 {
+    color: rgba(0, 119, 255, 0.541);
+    filter: brightness(300%);
+}
+.playall {
+    display: flex;
+    justify-content: space-around;
+}
+#playall, #addtocollection {
+    color: rgb(255, 255, 255);
+    display: block;
+    background-color: rgba(255, 255, 255, 0.521);
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    width: 9em;
+    text-align: center;
+    height: 2em;
+    padding-top: 1em;
+    border-radius: 2em;
+}
+
+.section2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    border-radius: 2em;
+    margin: 5px;
+   background-color: black;
+   transition: border-color 0.5s;
+}
+main:hover, main:focus {
+    border-color: yellow;
+}
+
+span {
+    margin-top: 3em;
+}
+.tune1 {
+    margin-top: 3em;
+}
+#label1 {
+    margin-top: 3em;
+    color: yellow; 
+    margin-right: 1em;
+}
+#tunes1 {
+    width: 75px;
+    margin: 1em;
+    border: 1px solid black;
+    border-radius: 1em;
+}
